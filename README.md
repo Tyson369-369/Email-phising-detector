@@ -1,10 +1,26 @@
-# AI Phishing Risk Assistant
+# Phishing Risk Assistant
 
 A Chrome Manifest V3 extension and local FastAPI backend for detecting phishing indicators in opened Gmail messages.
 
 This first version is rule-based only. It does not use any paid external API.
 
 Privacy note: This prototype analyses only the visible email content in the browser and sends it to a local backend for demonstration purposes.
+
+## Purpose
+
+Banks and financial services teams spend significant effort reducing phishing, credential theft, and online banking fraud. While Phishing emails remain one of the most common attack vectors for credential theft, financial fraud, and account compromise.
+
+This project was developed as a lightweight browser-side assistant that helps users identify suspicious emails directly inside Gmail before interacting with links or sharing sensitive information.
+
+The prototype combines:
+- phishing content analysis
+- suspicious link detection
+- sender-domain checks
+- SPF/DMARC awareness
+- banking impersonation detection
+- explainable risk feedback
+
+The goal is to improve user awareness and support safer decision-making during email interactions.
 
 ## Structure
 
@@ -168,22 +184,6 @@ If a message mentions one of those brands and also asks for urgent account verif
 ```text
 Possible banking impersonation detected: mentions Maybank with urgent account verification language.
 ```
-
-## Purpose
-
-Banks and financial services teams spend significant effort reducing phishing, credential theft, and online banking fraud. While Phishing emails remain one of the most common attack vectors for credential theft, financial fraud, and account compromise.
-
-This project was developed as a lightweight browser-side assistant that helps users identify suspicious emails directly inside Gmail before interacting with links or sharing sensitive information.
-
-The prototype combines:
-- phishing content analysis
-- suspicious link detection
-- sender-domain checks
-- SPF/DMARC awareness
-- banking impersonation detection
-- explainable risk feedback
-
-The goal is to improve user awareness and support safer decision-making during email interactions.
 
 ## Rule-Based Checks
 
