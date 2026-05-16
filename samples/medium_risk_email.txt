@@ -1,0 +1,14 @@
+Subject: Billing reminder for your account
+
+Dear customer,
+
+We could not confirm the latest billing status for your account. Please review your invoice soon to avoid any delay in service.
+
+Action required: review the billing details today.
+
+Billing portal:
+https://bit.ly/review-billing-example
+
+If you already completed this, you can ignore this message.
+
+Support Team

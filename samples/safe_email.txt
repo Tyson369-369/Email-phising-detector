@@ -1,0 +1,16 @@
+Subject: Project notes for tomorrow
+
+Hi Sam,
+
+Here are the notes from today's project check-in. The timeline still looks good, and I added the meeting agenda for tomorrow.
+
+Agenda:
+- Review the prototype
+- Confirm the next development tasks
+- Share any blockers
+
+Reference link:
+https://example.com/project-notes
+
+Thanks,
+Taylor

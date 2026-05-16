@@ -1,0 +1,299 @@
+#gmail-ai-phishing-detector-banner.gpd-banner {
+  position: fixed;
+  top: 72px;
+  right: 18px;
+  z-index: 2147483647;
+  box-sizing: border-box;
+  width: min(360px, calc(100vw - 28px));
+  max-height: min(340px, calc(100vh - 96px));
+  overflow: auto;
+  padding: 10px 12px 11px;
+  border: 1px solid #dadce0;
+  border-left-width: 4px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202124;
+  box-shadow: 0 3px 10px rgba(60, 64, 67, 0.22);
+  font: 13px/1.4 Arial, sans-serif;
+  transition:
+    width 160ms ease,
+    max-height 160ms ease,
+    padding 160ms ease,
+    border-radius 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-dragging,
+#gmail-ai-phishing-detector-banner.gpd-dragging .gpd-banner-header {
+  cursor: grabbing;
+  user-select: none;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+  cursor: grab;
+  user-select: none;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-title-wrap {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 8px;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-risk-label {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-height: 22px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-title {
+  min-width: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 2px;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-minimise,
+#gmail-ai-phishing-detector-banner .gpd-banner-close {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5f6368;
+  cursor: pointer;
+  font: 700 16px/1 Arial, sans-serif;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-minimise:hover,
+#gmail-ai-phishing-detector-banner .gpd-banner-minimise:focus-visible,
+#gmail-ai-phishing-detector-banner .gpd-banner-close:hover,
+#gmail-ai-phishing-detector-banner .gpd-banner-close:focus-visible {
+  background: rgba(32, 33, 36, 0.08);
+  color: #202124;
+  outline: none;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-score {
+  margin: 0 0 7px;
+  color: #3c4043;
+  font-weight: 600;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-summary {
+  margin: 0 0 8px;
+  color: #3c4043;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-meta {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 3px 8px;
+  margin: 0 0 8px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #3c4043;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-meta dt,
+#gmail-ai-phishing-detector-banner .gpd-banner-meta dd {
+  margin: 0;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-meta dt {
+  font-weight: 700;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-meta dd {
+  overflow-wrap: anywhere;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-auth-found {
+  color: #137333;
+  font-weight: 700;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-auth-missing {
+  color: #b3261e;
+  font-weight: 700;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-auth-inconclusive {
+  color: #5f6368;
+  font-weight: 700;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banking-warning {
+  margin: 0 0 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #fce8e6;
+  color: #b3261e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-reasons {
+  margin: 0;
+  padding-left: 18px;
+  color: #3c4043;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-banner-reasons li {
+  margin: 3px 0;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-details-button {
+  margin: 8px 0 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #1a73e8;
+  cursor: pointer;
+  font: 700 13px/1.3 Arial, sans-serif;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-details-button:hover,
+#gmail-ai-phishing-detector-banner .gpd-details-button:focus-visible {
+  color: #174ea6;
+  text-decoration: underline;
+  outline: none;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-risk-high {
+  border-color: #d93025;
+  background: #fff7f6;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-risk-high .gpd-risk-label {
+  background: #d93025;
+  color: #ffffff;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-risk-medium {
+  border-color: #f9ab00;
+  background: #fffaf0;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-risk-medium .gpd-risk-label {
+  background: #f9ab00;
+  color: #202124;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-risk-low {
+  border-color: #188038;
+  background: #f4fbf6;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-risk-low .gpd-risk-label {
+  background: #188038;
+  color: #ffffff;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-minimised {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 156px;
+  min-height: 38px;
+  max-height: 44px;
+  overflow: hidden;
+  padding: 8px 12px;
+  border-width: 1px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(60, 64, 67, 0.2);
+  cursor: grab;
+  user-select: none;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-minimised:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-minimised.gpd-dragging {
+  cursor: grabbing;
+}
+
+#gmail-ai-phishing-detector-banner .gpd-pill-shield {
+  position: relative;
+  flex: 0 0 auto;
+  width: 16px;
+  height: 18px;
+  background: currentColor;
+  clip-path: polygon(50% 0, 88% 14%, 82% 64%, 50% 100%, 18% 64%, 12% 14%);
+}
+
+#gmail-ai-phishing-detector-banner .gpd-pill-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-minimised.gpd-risk-high {
+  border-color: #d93025;
+  background: #d93025;
+  color: #ffffff;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-minimised.gpd-risk-medium {
+  border-color: #f9ab00;
+  background: #f9ab00;
+  color: #202124;
+}
+
+#gmail-ai-phishing-detector-banner.gpd-minimised.gpd-risk-low {
+  border-color: #188038;
+  background: #188038;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  #gmail-ai-phishing-detector-banner.gpd-banner {
+    top: 64px;
+    right: 12px;
+    width: min(360px, calc(100vw - 24px));
+  }
+
+  #gmail-ai-phishing-detector-banner.gpd-minimised {
+    width: 148px;
+  }
+}

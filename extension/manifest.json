@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "AI Phishing Risk Assistant",
+  "version": "0.1.0",
+  "description": "Shows phishing risk indicators for opened Gmail messages using a local rule-based FastAPI backend.",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ]
+}

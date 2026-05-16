@@ -1,0 +1,15 @@
+Subject: Maybank security alert: verify your account immediately
+
+Dear user,
+
+Maybank has detected an unauthorised transaction on your online banking profile. Your bank account suspended due to unusual activity. You must verify your banking account within 24 hours or access will be permanently disabled.
+
+Re-enter your password, confirm your account, and update your banking details here:
+http://192.168.1.44/login/verify-account
+
+Backup verification link:
+https://paypal-security-alert.xyz/account/password-reset
+
+Use your OTP or TAC to complete the verification. Failure to act now will result in account closure.
+
+Security Department
